@@ -3,7 +3,10 @@
     <div class="vsm-list" :style="[{'height' : '100%'}, {'overflow' : 'hidden auto'}]">
       <template v-for="(item, index) in menu">
          <template v-if="item.header">
-           <div v-if="!isCollapsed" :key="index" class="vsm-header">{{item.title}}</div>
+           <div v-if="!isCollapsed" :key="index" class="vsm-header">
+             <p v-if="item.title">{{item.title}}</p>
+             <img v-if='item.logo' :src='item.logo' />
+           </div>
          </template>
          <item v-else :key="index" :item="item" :firstItem="true" :isCollapsed="isCollapsed" />
       </template>
@@ -21,7 +24,7 @@
         </transition>
       </div>
     </div>
-    <button class="collapse-btn" @click="toggleCollapse"></button>
+    <button class="collapse-btn" @click="toggleCollapse"><i class="fas fa-arrows-alt-h"></i></button>
   </div>
 </template>
 

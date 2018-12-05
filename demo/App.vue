@@ -13,7 +13,8 @@ export default {
       menu: [
         {
           header: true,
-          title: 'Main Navigation'
+          title: 'Main Navigation',
+          logo: 'https://via.placeholder.com/150'
         },
         {
           href: '/',

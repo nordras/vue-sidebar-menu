@@ -84,8 +84,8 @@
   transition: 0.3s transform;
 }
 .v-sidebar-menu .vsm-arrow:after {
-  content: '\f105';
-  font-family: 'Font Awesome 5 Free';
+  //content: '\f105';
+  //font-family: 'Font Awesome 5 Free';
 }
 .v-sidebar-menu .vsm-arrow.open-arrow {
   transform: translateY(-50%) rotate(90deg);
@@ -187,6 +187,6 @@
   width: 100%;
 }
 .v-sidebar-menu .collapse-btn:after {
-  content: '\f337';
-  font-family: 'Font Awesome 5 Free';
+  // content: '\f337';
+  // font-family: 'Font Awesome 5 Free';
 }

@@ -19,7 +19,7 @@
                 <i v-if="item.icon" class="vsm-icon" :class="item.icon"></i>
                 <template v-if="!isCollapsed">
                     <span class="vsm-title">{{item.title}}</span>
-                    <i class="vsm-arrow" :class="{'open-arrow' : show}" ></i>
+                    <i class="vsm-arrow fas fa-angle-right" :class="{'open-arrow' : show}" ></i>
                 </template>
             </div>
             <div class="vsm-dropdown" v-if="!isCollapsed">
